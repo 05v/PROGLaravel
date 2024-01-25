@@ -3,8 +3,8 @@
 
     <section>
         <article>
-            <h2>TITEL</h2>
-            <p>DESCRIPTION</p>
+            <h2>{{$product->title}}</h2>
+            <a href="{{route('product.show', $product)}}">Bekijk dit item</a>
         </article>
     </section>
 </x-site-layout>

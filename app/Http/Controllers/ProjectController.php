@@ -16,4 +16,17 @@ class ProjectController extends Controller
         // sla het model op
         $model->save();
     }
+
+    /**
+     * Show a single item
+     * 
+     * @param Model $model
+     * @return string
+     */
+
+    public function show(Product $product)
+    {
+        dump($product);
+        return view('product.show', ['product' => $product]);
+    }
 }
