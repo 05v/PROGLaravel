@@ -5,7 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class products extends Model
+class Product extends Model
 {
     use HasFactory;
+
+    public function products()
+    {
+        $products = Product::all();
+        return view('products.index');
+    }
 }
